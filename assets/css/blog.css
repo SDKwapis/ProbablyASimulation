@@ -1,0 +1,26 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    border-bottom: 10px double black;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    border-top: 10px double black;
+}
+
+.section {
+    margin: 20px
+}
+
+#button {
+    background-color: black;
+    color: white;
+    width: auto;
+    margin: auto;
+    padding: 5px 15px 5px 15px;
+}
