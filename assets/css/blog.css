@@ -3,8 +3,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #f0f0f0;
+    color: turquoise;
     border-bottom: 10px double black;
+    padding-left: 20px
 }
 
 footer {
