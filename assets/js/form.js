@@ -19,5 +19,6 @@ submitPost.addEventListener('click', function (event) {
         post: post
     };
 
-    console.log(newPost);
+   localStorage.setItem('newPost', JSON.stringify(newPost));
+   
 })
