@@ -5,17 +5,40 @@ header {
     justify-content: space-evenly;
     color: turquoise;
     border-bottom: 10px double black;
-    padding-left: 20px
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.titleStyle {
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.postStyle {
+    font-style: italic; 
+    padding: 0px 0px 20px 20px;
+}
+
+.author {
+    color: rgb(130, 129, 129)
 }
 
 footer {
     display: block;
     text-align: center;
     border-top: 10px double black;
+    margin-top: 20px;
+}
+
+#blogContainer {
+    border: 2px solid black;
+    padding: 0px 5px 0px 15px;
 }
 
 .section {
-    margin: 20px
+    margin: 20px;
+    padding: 20px;
 }
 
 #button {
