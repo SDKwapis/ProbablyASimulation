@@ -2,8 +2,6 @@ const userName = document.querySelector('#username');
 const title = document.querySelector('#title');
 const post = document.querySelector('#post'); 
 
-
-
 const submitPost = document.querySelector('#button');
 
 submitPost.addEventListener('click', function (event) {
@@ -20,5 +18,7 @@ submitPost.addEventListener('click', function (event) {
     };
 
    localStorage.setItem('newPost', JSON.stringify(newPost));
+
+   window.location.href = 'blog.html';
    
 })

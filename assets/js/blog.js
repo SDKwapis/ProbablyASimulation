@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('blogContainer');
 
-
 // Retreive object data from sessionStorage
-const newPostJSON = sessionStorage.getItem('newPost');
+const newPostJSON = localStorage.getItem('newPost');
 
 if (newPostJSON) {
     const newPost = JSON.parse(newPostJSON);
@@ -30,3 +29,7 @@ sessionStorage.removeItem('newPost');
     console.error('No new post found.');
 }
 });
+
+console.log('newPost:', newPost);
+
+
