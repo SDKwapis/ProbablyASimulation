@@ -17,8 +17,12 @@ submitPost.addEventListener('click', function (event) {
         post: post
     };
 
-   localStorage.setItem('newPost', JSON.stringify(newPost));
+    const postArray = JSON.parse(localStorage.getItem('postArray')) || [];
+    postArray.push(newPost);
+   
+   localStorage.setItem('postArray', JSON.stringify(postArray));
 
    window.location.href = 'blog.html';
    
 })
+

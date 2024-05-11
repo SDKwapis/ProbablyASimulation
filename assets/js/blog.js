@@ -26,8 +26,8 @@ div.appendChild(blogPost);
 div.appendChild(postedBy);
 container.appendChild(div);
 
-localStorage.removeItem('newPost');
-
+// localStorage.removeItem('newPost');
+// 
 } else {
     // When no data is available
     console.error('No new post found.');
