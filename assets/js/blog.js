@@ -9,7 +9,7 @@ if (postsJSON) {
     const posts = JSON.parse(postsJSON);
 
 // Loop through each post and create HTML elements for each
-posts.forEach(function(newPost) {
+posts.reverse().forEach(function(newPost) {
 const div = document.createElement('div');
 const newTitle = document.createElement('h3');
 newTitle.className = 'titleStyle'
