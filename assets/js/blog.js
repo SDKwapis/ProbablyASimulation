@@ -2,13 +2,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('blogContainer');
 
-// Retreive object data from localStorage
-const newPostJSON = localStorage.getItem('newPost');
+// Retreive array data from localStorage
+const postsJSON = localStorage.getItem('postArray');
 
-if (newPostJSON) {
-    const newPost = JSON.parse(newPostJSON);
+if (postsJSON) {
+    const posts = JSON.parse(postsJSON);
 
-// create HTML elements
+// Loop through each post and create HTML elements for each
+posts.forEach(function(newPost) {
 const div = document.createElement('div');
 const newTitle = document.createElement('h3');
 newTitle.className = 'titleStyle'
@@ -26,8 +27,7 @@ div.appendChild(blogPost);
 div.appendChild(postedBy);
 container.appendChild(div);
 
-// localStorage.removeItem('newPost');
-// 
+});
 } else {
     // When no data is available
     console.error('No new post found.');
