@@ -10,10 +10,12 @@ In the avaialble text entry fields enter your username (you can just make one up
 
 Assistance in creating this site and its function's was made possible primarily through Jung, W3 Schools, and many Stack Overflow threads.
 
-## Visuals
+## Visuals/Links
 
 <img src="./assets/images/firstpage.png">
 <img src="./assets/images/blog.png">
+
+https://sdkwapis.github.io/ProbablyASimulation/
 
 ## Contributing
 
