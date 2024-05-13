@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('blogContainer');
+    container.innerHTML = '';
 
 // Retreive array data from localStorage
 const postsJSON = localStorage.getItem('postArray');
